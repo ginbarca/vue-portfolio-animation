@@ -1,0 +1,56 @@
+//.glowing-tube-light {
+//    color: #0e3742;
+//    line-height: 1em;
+//    text-transform: uppercase;
+//    outline: none;
+//    animation: animate 1s linear infinite;
+//    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+//    //-moz-transform: scaleY(-1);
+//    //-o-transform: scaleY(-1);
+//    //-webkit-transform: scaleY(-1);
+//    //transform: scaleY(-1);
+//    //-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(20%, transparent), to(rgba(0, 0, 0, 0.4)));
+//}
+//
+//
+//@keyframes animate {
+//    0%,
+//    18%,
+//    20%,
+//    50.1%,
+//    60%,
+//    65.1%,
+//    80%,
+//    90.1%,
+//    92% {
+//        color: #0008;
+//        text-shadow: none;
+//    }
+//    18.1%,
+//    20.1%,
+//    30%,
+//    50%,
+//    60.1%,
+//    65%,
+//    80.1%,
+//    90%,
+//    92%,
+//    100% {
+//        color: #fff;
+//        text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+//        0 0 80px #03bcf4, 0 0 160px #03bcf4;
+//    }
+//}
+#my-loading {
+    width: 50px;
+    #logo {
+        path {
+            fill: none;
+        }
+    }
+}
+.white path {
+    stroke-width: 0px !important;
+    fill: #fff !important;
+    transition: fill .5s ease !important;
+}
