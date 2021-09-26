@@ -7,7 +7,7 @@ function resolve(dir) {
 
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
-        ? '/leonguyen/'
+        ? '/vue-portfolio-animation/'
         : '/',
     configureWebpack: {
         // provide the app's title in webpack's name field, so that
