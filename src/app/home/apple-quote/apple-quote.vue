@@ -23,7 +23,7 @@ import * as Vivus from 'vivus';
 import ScrollMagic from 'scrollmagic';
 import TweenMax, {TimelineMax} from "gsap";
 import Linear from "gsap";
-import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
+// import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
 import {ScrollMagicPluginGsap} from "scrollmagic-plugin-gsap";
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
@@ -50,7 +50,7 @@ export default {
                 .setClassToggle('.apple-quote__draw', 'steve-fade-in')
                 .setTween(tween)
                 .setPin('#trigger-draw')
-                .addIndicators()
+                // .addIndicators()
                 .addTo(controller);
         },
         pathPrepare($el) {
