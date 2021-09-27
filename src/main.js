@@ -5,7 +5,6 @@ import i18n from "@shared/locale/index";
 import App from '~/app.vue';
 
 import './main.scss';
-import './script';
 
 import router from '@shared/router';
 import store from '@shared/store';
