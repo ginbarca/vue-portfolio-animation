@@ -1,2 +1,12 @@
 {
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@components/*": ["src/app/shared/components/*"],
+            "@/*": ["src/*"],
+            "@shared/*": ["src/app/shared/*"],
+            "~/*": ["src/app/*"]
+        }
+    },
+    "exclude": ["node_modules"]
 }
