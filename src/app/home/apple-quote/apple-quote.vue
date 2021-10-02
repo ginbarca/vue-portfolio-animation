@@ -3,7 +3,7 @@
         <!--        <div style="width: 200px" id="trigger1"></div>-->
         <div class="container apple-quote__draw">
             <div class="apple-quote__draw__steve-jobs">
-                <img :src="`${this.$route.path}/images/steve-jobs.jpeg`" alt="Steve Jobs">
+                <img :src="require(`@/assets/images/steve-jobs.jpeg`)" alt="Steve Jobs">
             </div>
             <div class="apple-quote__draw__svg" id="steve-job-quote"></div>
             <!--            <div style="height: 100vh">-->
@@ -30,7 +30,7 @@ ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 export default {
     name: "AppleQuote",
     mounted() {
-        new Vivus('steve-job-quote', {file: this.$route.path + '/images/apple-think-diff.svg', start: 'autostart'}, () => {
+        new Vivus('steve-job-quote', {file: '/images/apple-think-diff.svg', start: 'autostart'}, () => {
             this.initDraw();
         });
     },
