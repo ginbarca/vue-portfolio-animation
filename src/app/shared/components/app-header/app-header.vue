@@ -100,12 +100,17 @@ import * as Vivus from 'vivus';
 
 export default {
     name: 'AppHeader',
+    data() {
+        return {
+            loadingSvg: require('@/assets/images/loading.svg')
+        }
+    },
     mounted() {
         window.onscroll = function () {
             onwindowScroll();
         };
         new Vivus('my-loading', {
-            file: '/images/loading.svg',
+            file: this.loadingSvg,
             type: 'sync',
             duration: 100,
         }, () => {

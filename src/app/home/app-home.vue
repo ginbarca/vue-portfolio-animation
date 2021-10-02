@@ -119,6 +119,11 @@ export default {
                 height: window.innerHeight
                 // width: this.$refs.home.clientWidth,
                 // height: this.$refs.home.clientHeight,
+            },
+            textureMaterials: {
+                texture: require('@/assets/images/texture.jpeg'),
+                height: require('@/assets/images/height.png'),
+                alpha: require('@/assets/images/alpha.png'),
             }
         }
     },
@@ -146,9 +151,9 @@ export default {
             this.scene = new THREE.Scene();
 
             this.loader = new THREE.TextureLoader();
-            const texture = this.loader.load('/images/texture.jpeg');
-            const height = this.loader.load('/images/height.png');
-            const alpha = this.loader.load('/images/alpha.png');
+            const texture = this.loader.load(this.textureMaterials.texture);
+            const height = this.loader.load(this.textureMaterials.height);
+            const alpha = this.loader.load(this.textureMaterials.alpha);
             const geometry = new THREE.PlaneBufferGeometry(4, 4, 38, 38);
             const material = new THREE.MeshStandardMaterial({
                 color: 'gray',

@@ -29,8 +29,13 @@ ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
 export default {
     name: "AppleQuote",
+    data() {
+        return {
+            appleLogoSvg: require('@/assets/images/apple-think-diff.svg')
+        }
+    },
     mounted() {
-        new Vivus('steve-job-quote', {file: '/images/apple-think-diff.svg', start: 'autostart'}, () => {
+        new Vivus('steve-job-quote', {file: this.appleLogoSvg, start: 'autostart'}, () => {
             this.initDraw();
         });
     },
