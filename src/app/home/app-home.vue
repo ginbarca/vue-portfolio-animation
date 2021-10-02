@@ -146,9 +146,9 @@ export default {
             this.scene = new THREE.Scene();
 
             this.loader = new THREE.TextureLoader();
-            const texture = this.loader.load('/images/texture.jpeg');
-            const height = this.loader.load('/images/height.png');
-            const alpha = this.loader.load('/images/alpha.png');
+            const texture = this.loader.load('@/assets/images/texture.jpeg');
+            const height = this.loader.load('@/assets/images/height.png');
+            const alpha = this.loader.load('@/assets/images/alpha.png');
             const geometry = new THREE.PlaneBufferGeometry(4, 4, 38, 38);
             const material = new THREE.MeshStandardMaterial({
                 color: 'gray',
