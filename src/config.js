@@ -33,28 +33,28 @@ module.exports = {
      * @type {Object}
      * @description Default application settings.
      */
-    // settings: {
-    //     locale: 'en',
-    //     dense: true,
-    //     footer: false,
-    //     navbar: {
-    //         show: true,
-    //         dense: false,
-    //         logo: false,
-    //     },
-    //     fullscreen: {
-    //         show: false,
-    //         btn: true,
-    //     },
-    //     settingsPanel: {
-    //         show: false,
-    //         btn: true,
-    //     },
-    //     theme: {
-    //         index: 0,
-    //         dark: false,
-    //     },
-    // },
+    settings: {
+        locale: 'en',
+        dense: true,
+        footer: false,
+        navbar: {
+            show: true,
+            dense: false,
+            logo: false,
+        },
+        fullscreen: {
+            show: false,
+            btn: true,
+        },
+        settingsPanel: {
+            show: false,
+            btn: true,
+        },
+        theme: {
+            index: 0,
+            dark: false,
+        },
+    },
 
     /**
      * @type {boolean} true | false
@@ -63,5 +63,5 @@ module.exports = {
      * The default is only used in the production env
      * If you want to also use it in dev, you can pass ['production', 'development']
      */
-    // errorLog: 'production',
+    errorLog: 'production',
 };
