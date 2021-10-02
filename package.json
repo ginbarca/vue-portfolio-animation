@@ -8,7 +8,8 @@
         "serve": "vue-cli-service serve --port 3000",
         "build": "vue-cli-service build",
         "lint": "vue-cli-service lint",
-        "deploy": "sh deploy.sh"
+        "deploy": "sh deploy.sh",
+        "gh-pages-deploy": "node scripts/gh-pages-deploy.js"
     },
     "dependencies": {
         "bootstrap": "^4.4.1",
@@ -35,13 +36,17 @@
         "@vue/cli-plugin-eslint": "^4.5.13",
         "@vue/cli-service": "^4.5.13",
         "babel-eslint": "^10.1.0",
+        "chalk": "^4.0.0",
         "eslint": "^6.8.0",
         "eslint-import-resolver-alias": "^1.1.2",
         "eslint-plugin-import": "^2.24.2",
         "eslint-plugin-vue": "^7.18.0",
+        "execa": "^4.0.0",
         "imports-loader": "^3.0.0",
+        "node-emoji": "^1.10.0",
         "sass": "^1.42.1",
         "sass-loader": "^10.2.0",
+        "vue-cli-plugin-gh-pages-auto-deploy": "~0.4.0",
         "vue-cli-plugin-vuetify": "^2.4.2",
         "vue-template-compiler": "^2.6.14"
     },
