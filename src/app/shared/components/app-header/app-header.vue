@@ -105,7 +105,7 @@ export default {
             onwindowScroll();
         };
         new Vivus('my-loading', {
-            file: '@/assets/images/loading.svg',
+            file: this.$route.path + '/images/loading.svg',
             type: 'sync',
             duration: 100,
         }, () => {
