@@ -1,6 +1,6 @@
 {
-    "name": "leo-nguyen",
-    "title": "Leo Nguyen",
+    "name": "viet-anh-nguyen",
+    "title": "Viet Anh Nguyen",
     "version": "0.1.0",
     "description": "Personal website",
     "author": "NVA <nva1308@gmail.com>",
@@ -28,7 +28,6 @@
         "vue-scrollto": "^2.17.1",
         "vue-typed-js": "^0.1.2",
         "vue-youtube": "^1.4.0",
-        "vue2-scrollspy": "^2.3.1",
         "vuex": "^3.6.2"
     },
     "devDependencies": {

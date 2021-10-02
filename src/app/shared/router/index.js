@@ -15,6 +15,6 @@ const appRoutes = [
 const routes = [...homeRoutes, ...appRoutes];
 
 export default new Router({
-    mode: 'history',
+    mode: 'hash',
     routes
 });
